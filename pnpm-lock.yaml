@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@react-spring/three':
+    specifier: ^9.7.5
+    version: 9.7.5(@react-three/fiber@8.17.10)(react@18.3.1)(three@0.171.0)
   '@react-three/drei':
     specifier: 9.120.4
     version: 9.120.4(@react-three/fiber@8.17.10)(@types/react@18.3.17)(@types/three@0.171.0)(react-dom@18.3.1)(react@18.3.1)(three@0.171.0)
@@ -17,12 +20,18 @@ dependencies:
   leva:
     specifier: ^0.9.35
     version: 0.9.35(@types/react-dom@18.3.5)(@types/react@18.3.17)(react-dom@18.3.1)(react@18.3.1)
+  maath:
+    specifier: ^0.10.8
+    version: 0.10.8(@types/three@0.171.0)(three@0.171.0)
   motion:
     specifier: ^11.15.0
     version: 11.15.0(react-dom@18.3.1)(react@18.3.1)
   next:
     specifier: 14.2.16
     version: 14.2.16(react-dom@18.3.1)(react@18.3.1)
+  postprocessing:
+    specifier: ^6.36.4
+    version: 6.36.4(three@0.171.0)
   react:
     specifier: 18.3.1
     version: 18.3.1
@@ -3172,6 +3181,14 @@ packages:
       picocolors: 1.1.1
       source-map-js: 1.2.1
     dev: true
+
+  /postprocessing@6.36.4(three@0.171.0):
+    resolution: {integrity: sha512-3fAyBGuLNR7Rg/q+f2SNlsVCI5mDrymvxhOif3tPKEej8M38z4TvwzNZm+RNpRY2tACE7qQUNE5IHyMcqgvlAg==}
+    peerDependencies:
+      three: '>= 0.157.0 < 0.171.0'
+    dependencies:
+      three: 0.171.0
+    dev: false
 
   /potpack@1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}

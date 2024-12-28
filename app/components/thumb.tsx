@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import type { Lab } from "../lab";
+import type { Lab } from "../(lab)";
 import Image from "next/image";
 
 export function Thumbnail({ lab, delay }: { lab: Lab; delay?: number }) {

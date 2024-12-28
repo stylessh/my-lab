@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Lab } from "../lab";
+import { Lab } from "../(lab)";
 import { ArrowLeftIcon } from "./icons";
 import { getGithubPath } from "../utils";
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getList } from "./lab";
+import { getList } from "./(lab)";
 import { Thumbnail } from "./components/thumb";
 
 export default function Home() {

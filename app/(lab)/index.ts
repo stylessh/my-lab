@@ -18,7 +18,7 @@ const list: Lab[] = [
   {
     id: "blobs",
     title: "Smooth Blobs",
-    href: "/lab/blobs",
+    href: "/blobs",
     type: "3d",
 
     description: "Spheres using SDF and raymarching.",
@@ -43,6 +43,23 @@ const list: Lab[] = [
     ],
 
     thumbnail: "/assets/thumbs/blobs.png",
+  },
+  {
+    id: "morph-cube",
+    title: "Morph Cube",
+    href: "/morph-cube",
+    type: "3d",
+
+    description: "Morphing cubes with react-three-fiber and drei.",
+
+    sources: [
+      {
+        title: "Yinger Website (Inspiration)",
+        href: "https://yinger.dev/",
+      },
+    ],
+
+    thumbnail: "/assets/thumbs/morph-cube.png",
   },
 ];
 
