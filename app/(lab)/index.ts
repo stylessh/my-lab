@@ -63,7 +63,7 @@ const list: Lab[] = [
   },
 ];
 
-export const getList = () => list;
+export const getList = () => list.toReversed();
 
 export const getLabFromList = (id: string) =>
   list.find((item) => item.id === id);
