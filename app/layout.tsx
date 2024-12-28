@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const font = IBM_Plex_Mono({
+const display = Playfair_Display({
+  weight: ["400", "500", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+});
+
+const body = Inter({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.variable} antialiased`}>{children}</body>
+      <body className={`${body.variable} ${display.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

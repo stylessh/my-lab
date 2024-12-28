@@ -1,10 +1,10 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
 import { Leva } from "leva";
+import { Suspense } from "react";
 
-export default function CanvasLayout({
+export default function WebGLLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -1,15 +1,18 @@
 import Entry from "./entry";
-import { InfoPanel } from "@/app/components/info-panel";
 import { getLabFromList } from "../..";
+import WebGLLayout from "@/app/layouts/webgl-layout";
+import { Links } from "@/app/components/links";
 
 export default async function Blobs() {
   const lab = getLabFromList("blobs");
 
   return (
     <>
-      <Entry />
+      <WebGLLayout>
+        <Entry />
+      </WebGLLayout>
 
-      <InfoPanel lab={lab} />
+      <Links lab={lab} />
     </>
   );
 }

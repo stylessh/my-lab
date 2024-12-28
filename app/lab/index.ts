@@ -10,6 +10,8 @@ export type Lab = {
     title: string;
     href: string;
   }[];
+
+  thumbnail?: string;
 };
 
 const list: Lab[] = [
@@ -39,6 +41,8 @@ const list: Lab[] = [
         href: "https://broedutrecht.nl/",
       },
     ],
+
+    thumbnail: "/assets/thumbs/blobs.png",
   },
 ];
 
