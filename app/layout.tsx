@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +31,8 @@ export default function RootLayout({
       <body className={`${body.variable} ${display.variable} antialiased`}>
         {children}
       </body>
+
+      <Analytics />
     </html>
   );
 }
