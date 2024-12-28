@@ -18,8 +18,8 @@ export default async function MorphCube() {
           camera: {
             position: [0, 0, 30],
             fov: 15,
-            near: 10,
-            far: 40,
+            // near: 10,
+            // far: 40,
           },
         }}
       >
